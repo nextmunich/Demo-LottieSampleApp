@@ -24,6 +24,7 @@ public class Shape1Activity extends AppCompatActivity {
             public void onAnimationUpdate(ValueAnimator animation) {
                 float value = animation.getAnimatedFraction();
                 if(showLoading && value >= VALUE_LOADING_END) {
+                    // Reset animation to loading start
                     animationView.pauseAnimation();
                     animationView.setProgress(VALUE_LOADING_START);
                     animationView.resumeAnimation();
