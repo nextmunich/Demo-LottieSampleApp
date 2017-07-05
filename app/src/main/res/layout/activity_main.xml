@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnShape1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shape1"
+        android:layout_above="@+id/btnShape2"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openShape1Activity"/>
+    <Button
+        android:id="@+id/btnShape2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shape2"
+        android:layout_marginBottom="16dp"
+        android:layout_centerInParent="true"
+        android:onClick="openShape2Activity"/>
+    <Button
+        android:id="@+id/btnShape3"
+        android:layout_below="@+id/btnShape2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shape3"
+        android:onClick="openShape3Activity"/>
+</RelativeLayout>
