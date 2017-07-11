@@ -3,6 +3,9 @@ package lottie.example.com.lottiedemoapp;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
+/*
+ * @author <a href="https://stackoverflow.com/questions/13095494/how-to-detect-swipe-direction-between-left-right-and-up-down#26387629">SwipeListener</a>
+ */
 public class OnSwipeListener extends GestureDetector.SimpleOnGestureListener {
 
     private ISwipeListener iSwipeListener;
